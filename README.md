@@ -1,130 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #007acc;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .container {
-            max-width: 960px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #007acc;
-            border-bottom: 2px solid #007acc;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .features, .guidelines, .deliverables, .usage {
-            margin-bottom: 40px;
-        }
-        .features ul, .guidelines ul, .deliverables ul {
-            list-style: none;
-            padding: 0;
-        }
-        .features li, .guidelines li, .deliverables li {
-            margin-bottom: 10px;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .features li::before, .guidelines li::before, .deliverables li::before {
-            content: "✔";
-            color: #007acc;
-            font-weight: bold;
-            margin-right: 10px;
-        }
-        footer {
-            background-color: #007acc;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-<body>
+# To-Do List Application
 
-<header>
-    <h1>To-Do List App</h1>
-    <p>A basic To-Do List application with a splash screen, task management, and responsive UI.</p>
-</header>
+A simple and effective **To-Do List** application with a splash screen, task management, and a responsive user interface.
 
-<div class="container">
-    <section class="objective">
-        <h2>Objective</h2>
-        <p>The goal of this project is to build a basic To-Do List application where users can add, view, and manage their tasks. The app will feature a splash screen with animations, use fragments for task entry, and have a responsive user interface using ConstraintLayout.</p>
-    </section>
+## 🚀 Objective
+The goal of this project is to create a **basic To-Do List application** where users can add, view, and manage tasks. The app includes a splash screen with animations, uses fragments for task entry, and features a responsive UI using `ConstraintLayout`.
 
-    <section class="features">
-        <h2>Features</h2>
-        <ul>
-            <li>Splash Screen with Translate and Scale Animations</li>
-            <li>Main To-Do List Page with Add Task Button</li>
-            <li>Task Input Fragment with Save Functionality</li>
-            <li>Responsive UI Using ConstraintLayout</li>
-        </ul>
-    </section>
+## 🌟 Features
+- **Splash Screen** with Translate and Scale Animations
+- **Main To-Do List Page** with an Add Task Button
+- **Task Input Fragment** for task name and description
+- **Responsive UI** using `ConstraintLayout`, adaptable to both portrait and landscape modes
 
-    <section class="guidelines">
-        <h2>Development Guidelines</h2>
-        <ul>
-            <li>All strings must be stored in the “strings.xml” file.</li>
-            <li>All dimensions must be defined in “dimens.xml”.</li>
-            <li>All colors should be declared in “colors.xml”.</li>
-            <li>Layouts must be responsive, using ConstraintLayout for both portrait and landscape modes.</li>
-            <li>Consistency across design, colors, fonts, and spacing.</li>
-        </ul>
-    </section>
+## 📋 Development Guidelines
+- All strings must be stored in `strings.xml`.
+- All dimensions must be defined in `dimens.xml`.
+- All colors should be declared in `colors.xml`.
+- Layouts must be responsive using `ConstraintLayout`.
+- Consistency in design, colors, fonts, and spacing is essential.
 
-    <section class="deliverables">
-        <h2>Deliverables</h2>
-        <ul>
-            <li>XML layouts for each screen and fragment.</li>
-            <li>Java code for splash screen animations, fragment navigation, and task management.</li>
-            <li>Log fragment lifecycle events (onCreate, onStart, onResume) to the console.</li>
-            <li>Fully responsive design for all screens.</li>
-        </ul>
-    </section>
+## 💻 Deliverables
+- XML layouts for each screen and fragment.
+- Java code for splash screen animations, fragment navigation, and task list functionality.
+- Fragment lifecycle events should be logged (e.g., `onCreate`, `onStart`, `onResume`).
+- Ensure a fully responsive design across all screens.
 
-    <section class="usage">
-        <h2>How to Use the Application</h2>
-        <p>After installing and launching the app, you'll first see the splash screen with animations. Once the animation completes, you will be taken to the To-Do list screen where you can:</p>
-        <ul>
-            <li>Add new tasks by tapping the '+' floating action button.</li>
-            <li>Input task details (name, description) in the task input fragment.</li>
-            <li>Save the task and return to the main list where the new task will appear.</li>
-        </ul>
-    </section>
+## 📱 App Flow
+1. **Splash Screen**: Displays the app’s logo and features animations.
+    - **Translate**: Logo moves from the top of the screen to the center.
+    - **Scale**: Logo grows slightly in size as it moves.
+2. **Main Screen**: Displays the to-do list and an "Add New Task" button (FAB).
+3. **Task Input Fragment**: Users input task details (title, description) and press Save to add the task to the list.
+4. **Responsive Design**: The app adapts to different screen sizes and orientations using `ConstraintLayout`.
+
+## 🛠 Technologies Used
+- **Android SDK** for app development.
+- **ConstraintLayout** for building responsive UI.
+- **Java** for backend logic and fragment management.
+
+## 🔄 Navigation
+- `StartActivityForResult` is used to manage navigation between activities.
+- Splash screen navigation is implemented after animations complete.
+
+## 📂 File Structure
+- **`strings.xml`**: Contains all app text.
+- **`dimens.xml`**: Defines dimensions used throughout the app.
+- **`colors.xml`**: Stores color definitions for consistent theming.
+
+## 🎨 Design Consistency
+- Maintain a unified design across all screens, ensuring clarity and ease of use.
+- Buttons, forms, and inputs are clearly labeled and user-friendly.
+
+## 🧪 Testing
+- Test the navigation flow to ensure smooth transitions between screens and fragments.
+- Validate that the UI remains responsive on different screen sizes and orientations.
+
+---
+
+## 📸 Demo
+_Add relevant screenshots of your app here (if available)._
+<div style="display: flex; justify-content: center; align-items: center;">
+    <video class="as" src="https://github.com/user-attachments/assets/fc043a89-1727-40a4-9bb1-0f35729d067e" controls="controls" style="max-width: 100%;">
+        Your browser does not support the video tag.
+    </video>
 </div>
 
-<footer>
-    <p>Made with ❤ by Tayyab Anees</p>
-</footer>
+---
 
-</body>
-</html>
+Made with ❤ by Tayyab Anees.
