@@ -62,7 +62,12 @@ The goal of this project is to create a **basic To-Do List application** where u
         Your browser does not support the video tag.
     </video>
 </div>
+
+---
 ## 📸 Responsiveness
+
+---
+
 <img src="https://github.com/user-attachments/assets/11aceca7-eb45-4eb5-abfd-ca4dffd3eb09" alt="W3Schools.com">
 
 ---
