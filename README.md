@@ -57,7 +57,6 @@ The goal of this project is to create a **basic To-Do List application** where u
 ---
 
 ## 📸 Demo
-_Add relevant screenshots of your app here (if available)._
 <div style="display: flex; justify-content: center; align-items: center;">
     <video class="as" src="https://github.com/user-attachments/assets/ffed774b-bfa5-41d8-b9bf-d5a553a93902" controls="controls" style="max-width: 100%;">
         Your browser does not support the video tag.
